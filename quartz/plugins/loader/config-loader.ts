@@ -711,10 +711,7 @@ export async function loadQuartzLayout(layoutOverrides?: {
   defaultLayout.head = head
   defaultLayout.header = defaultLayout.header ?? []
   defaultLayout.footer = defaultLayout.footer ?? []
-
-  const TrainingBannerModule = await import("../../components/TrainingBanner")
-  const trainingBanner = TrainingBannerModule.default()
-  defaultLayout.afterBody = [trainingBanner, ...(defaultLayout.afterBody ?? [])]
+  defaultLayout.afterBody = defaultLayout.afterBody ?? []
 
   // Ensure all byPageType entries inherit structural slots
   for (const pageType of Object.keys(byPageType)) {
@@ -722,9 +719,7 @@ export async function loadQuartzLayout(layoutOverrides?: {
     if (!pt.head) pt.head = head
     if (!pt.header) pt.header = defaultLayout.header
     if (!pt.footer) pt.footer = defaultLayout.footer
-    if (pageType !== "404" && pt.afterBody) {
-      pt.afterBody = [trainingBanner, ...pt.afterBody]
-    }
+
   }
 
   const mergedDefaults = { ...defaultLayout, ...layoutOverrides?.defaults }

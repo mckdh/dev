@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: "Sun's Internal Martial Arts"
-  pageTitleSuffix: " | Edmonton, Alberta"
+  pageTitle: "Ryan's Dev & Games"
+  pageTitleSuffix: " | 개발과 게임 연구소"
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: google
     tagId: G-WS085SLSE4
-  locale: en-US
-  baseUrl: mckdh.github.io/sun-style
+  locale: ko-KR
+  baseUrl: mckdh.github.io/dev
   ignorePatterns:
     - private
     - templates
@@ -250,10 +250,10 @@ plugins:
     options:
       provider: giscus
       options:
-        repo: mckdh/sun-style
-        repoId: R_kgDOT3s2jw
+        repo: mckdh/dev
+        repoId: R_kgDOU2B54g
         category: General
-        categoryId: DIC_kwDOT3s2j84DE6Wc
+        categoryId: DIC_kwDOU2B54s4DGxg9
         mapping: pathname
         strict: false
         reactionsEnabled: true

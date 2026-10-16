@@ -10,7 +10,7 @@ This blog is my public workbench. It's where I write down what works, what break
 
 ### 🛠️ What I Write About
 
-- **Software Engineering & Systems**: Distributed systems, streaming data with [[Kafka-Spark-Flink-Integration|Apache Kafka]], [[Transactional Outbox Pattern|reliable design patterns]], and pragmatic cloud setups.
+- **Software Engineering & Systems**: Distributed systems, streaming data with Apache Kafka, reliable design patterns, and pragmatic cloud setups.
 - **Indie Game Development**: Building a baseball pitching simulator from scratch, tackling ball physics, game feel, and mechanical design.
 - **Workplace Habits & Survival Tips**: Practical habits for surviving and growing in a tech company, from clear documentation to team communication (e.g., [[How to Improve My Performance as a Developer]]).
 - **Field Notes & Practical Debugging**: Real-world postmortems, production debugging stories, and architectural tradeoffs tested on living code.

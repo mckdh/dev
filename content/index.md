@@ -4,13 +4,18 @@ title: "Ryan's Dev & Game Lab"
 
 # Welcome to Ryan's Dev & Game Lab 💻🎮
 
-소프트웨어 아키텍처, 분산 시스템, 그리고 인디 게임 개발 여정을 기록하는 엔지니어링 블로그입니다.
+Hi, I work on B2B enterprise projects by day and craft indie games by night.
 
-### 🛠️ 주요 주제
-- **소프트웨어 엔지니어링 & 시스템 아키텍처**: 분산 시스템, Apache Kafka, 클라우드 아키텍처
-- **게임 개발 (Game Development)**: 투수 시뮬레이터, 게임 역학(Mechanics), 물리 엔진 및 디자인
-- **최신 기술 탐구**: AI 에이전트 오케스트레이션, 생산성 도구, 성능 최적화
-- **실전 문제 해결**: 실무 개발 과정에서의 디버깅과 아키텍처 의사결정 기록
+This blog is my public workbench. It's where I write down what works, what breaks, and what I learned the hard way while building systems and games.
+
+### 🛠️ What I Write About
+
+- **Software Engineering & Systems**: Distributed systems, streaming data with [[Kafka-Spark-Flink-Integration|Apache Kafka]], [[Transactional Outbox Pattern|reliable design patterns]], and pragmatic cloud setups.
+- **Indie Game Development**: Building a baseball pitching simulator from scratch, tackling ball physics, game feel, and mechanical design.
+- **Workplace Habits & Survival Tips**: Practical habits for surviving and growing in a tech company, from clear documentation to team communication (e.g., [[How to Improve My Performance as a Developer]]).
+- **Field Notes & Practical Debugging**: Real-world postmortems, production debugging stories, and architectural tradeoffs tested on living code.
+- **Modern Tools & Experiments**: AI agent workflows, productivity setups, and performance tuning that actually save time.
 
 ---
-*단순한 지식 나열을 넘어 장기적인 유지보수성과 원리 탐구를 지향합니다.*
+
+*Less textbook theory, more hands-on lessons focused on keeping code reliable and maintainable for the long haul.*

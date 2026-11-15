@@ -3,8 +3,6 @@ title: "Concurrency Correctness in Java: Lost Updates and the Locking Mistakes I
 parent: "[[index|Ryan's Dev & Game Lab]]"
 ---
 
-# Concurrency Correctness in Java: Lost Updates and the Locking Mistakes I Want to Avoid
-
 In [[Concurrency in Java|my last post]], I walked through the basic building blocks of Java concurrency. This follow-up zooms in on the first big hurdle: **correctness**. When multiple threads touch the same data at the same time, how do we make sure the numbers actually add up?
 
 I still have to remind myself of these basics during code reviews, so I am writing them down here while they are fresh.
@@ -51,3 +49,5 @@ Whenever I review code that shares state across threads, I try to run through th
 3. Am I making the lock more complicated than it needs to be before I have even measured contention?
 
 I still get tempted to jump straight to clever fine-grained or lock-free code. Most of the time, starting with one simple lock, measuring real traffic, and optimizing only the real bottleneck saves a lot of silent bugs.
+
+Previous post: [[Concurrency in Java|Concurrency in Java: What I Finally Understood After Years of Pretending]].

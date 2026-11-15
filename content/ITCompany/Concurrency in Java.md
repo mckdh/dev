@@ -2,8 +2,6 @@
 title: "Concurrency in Java: What I Finally Understood After Years of Pretending"
 parent: "[[index|Ryan's Dev & Game Lab]]"
 ---
-# Concurrency in Java: What I Finally Understood After Years of Pretending
-
 I have been writing code for a long time, and for years I did something a little embarrassing. Whenever concurrency came up in a meeting or code review, I nodded along without really understanding how the pieces fit together.
 
 I still catch myself glossing over thread safety when I am rushing to finish a ticket. So I wrote this note for myself, as a simple mental model I can come back to when things get fuzzy.
@@ -78,7 +76,7 @@ Sometimes you are not fighting over shared counters; you just want slow tasks (l
 ## 10. Three questions I try to ask myself
 
 Whenever concurrent code starts feeling overwhelming, I try to sort the problem into three buckets:
-- **Correctness**: Is the shared data safe from stale reads or half-finished updates? (`volatile`, atomics, locks)
+- **[[Concurrency Correctness in Java|Correctness]]**: Is the shared data safe from stale reads or half-finished updates? (`volatile`, atomics, locks)
 - **Coordination**: Are tasks handed off and waited on cleanly? (thread pools, `CompletableFuture`)
 - **Liveness**: Can the program keep moving forward without getting stuck? (consistent lock order, `tryLock` timeouts)
 
@@ -87,3 +85,5 @@ Whenever concurrent code starts feeling overwhelming, I try to sort the problem 
 Concurrency stopped feeling quite so intimidating once I stopped trying to memorize every Java keyword and focused on the basics: where data is shared, and how threads wait on each other.
 
 I still make mistakes here and have to look things up when I am tired or rushing a release. Whenever I get lost in a bug, I try to start with one question: *who else can touch this piece of data right now?* Usually, that points me straight to the real issue.
+
+Next up: [[Concurrency Correctness in Java|Concurrency Correctness in Java: Lost Updates and the Locking Mistakes I Want to Avoid]].

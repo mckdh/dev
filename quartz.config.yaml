@@ -6,7 +6,7 @@ configuration:
   enablePopovers: true
   analytics:
     provider: google
-    tagId: G-WS085SLSE4
+    tagId: G-MFCL11VZ77
   locale: ko-KR
   baseUrl: mckdh.github.io/dev
   ignorePatterns:
